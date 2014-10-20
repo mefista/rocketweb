@@ -1,0 +1,20 @@
+#main .connect-links li {
+  display: inline; }
+#main .banner img {
+  width: 100%;
+  height: auto; }
+#main .city-banners li {
+  display: inline; }
+
+footer {
+  background: #84888b;
+  color: #fff; }
+  footer li {
+    display: inline; }
+  footer a {
+    color: #fff; }
+  footer .footer-right-img img {
+    border: 1px solid #fff;
+    padding: 5px; }
+
+/*# sourceMappingURL=styles.css.map */

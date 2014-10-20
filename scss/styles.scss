@@ -1,0 +1,35 @@
+#main {
+    .connect-links {
+        li {
+            display: inline;
+        }
+    }
+    .banner{
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .city-banners {
+        li {
+            display: inline;
+        }
+    }
+}
+footer {
+    background: #84888b;
+    color: #fff;
+
+    li {
+        display: inline;
+    }
+    a {
+        color: #fff;
+    }
+    .footer-right-img {
+        img {
+            border: 1px solid #fff;
+            padding: 5px;
+      }
+    }
+}
