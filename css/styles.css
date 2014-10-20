@@ -1,20 +1,65 @@
-#main .connect-links li {
-  display: inline; }
-#main .banner img {
-  width: 100%;
-  height: auto; }
-#main .city-banners li {
-  display: inline; }
-
-footer {
-  background: #84888b;
-  color: #fff; }
-  footer li {
-    display: inline; }
-  footer a {
-    color: #fff; }
-  footer .footer-right-img img {
-    border: 1px solid #fff;
-    padding: 5px; }
+body {
+  font-family: Arial;
+  font-size: 12px;
+  color: #333333; }
+  body h2 {
+    color: #73adb3;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #eee; }
+  body a {
+    color: #ed0c7e; }
+  body .container {
+    max-width: 1170px; }
+    body .container #main .connect-links {
+      padding-right: 0; }
+      body .container #main .connect-links li {
+        display: inline; }
+    @media (max-width: 767px) {
+      body .container #main .connect-links li {
+        display: block; } }
+    body .container #main .carousel a.carousel-control {
+      height: 25px;
+      width: 25px;
+      top: 80%; }
+      body .container #main .carousel a.carousel-control.left {
+        left: 2%; }
+      body .container #main .carousel a.carousel-control.right {
+        right: 2%; }
+    body .container #main .carousel img {
+      width: 100%;
+      height: auto; }
+    body .container #main .carousel .glyphicon-chevron-left:before,
+    body .container #main .carousel .glyphicon-chevron-right:before {
+      content: none; }
+    body .container #main .grey-bg {
+      background: #eee;
+      padding: 10px; }
+      body .container #main .grey-bg .city-banners li {
+        display: block;
+        width: 20%;
+        padding: 1%;
+        float: left; }
+        body .container #main .grey-bg .city-banners li img {
+          width: 100%; }
+      body .container #main .grey-bg .direct-links li {
+        padding: 2% 1%; }
+        body .container #main .grey-bg .direct-links li img {
+          width: 100%; }
+      @media (max-width: 767px) {
+        body .container #main .grey-bg .direct-links li {
+          display: block;
+          width: 33%;
+          float: left;
+          padding: 1%; } }
+    body .container footer {
+      background: #84888b;
+      color: #fff; }
+      body .container footer li {
+        display: inline; }
+      body .container footer a {
+        color: #fff; }
+      body .container footer .footer-right-img img {
+        border: 1px solid #fff;
+        padding: 5px; }
 
 /*# sourceMappingURL=styles.css.map */

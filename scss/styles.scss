@@ -1,35 +1,113 @@
-#main {
-    .connect-links {
-        li {
-            display: inline;
-        }
-    }
-    .banner{
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
-    .city-banners {
-        li {
-            display: inline;
-        }
-    }
-}
-footer {
-    background: #84888b;
-    color: #fff;
+@import "bootstrap/_variables";
+@import "bootstrap/_mixins";
 
-    li {
-        display: inline;
+body {
+    font-family: Arial;
+    font-size: 12px;
+    color: #333333;
+
+    h2 {
+        color: #73adb3;
+        text-transform: uppercase;
+        border-bottom: 1px dashed #eee;
     }
+
     a {
-        color: #fff;
+        color: #ed0c7e;
     }
-    .footer-right-img {
-        img {
-            border: 1px solid #fff;
-            padding: 5px;
-      }
+
+    .container {
+        max-width: 1170px;
+        #main {
+            .connect-links {
+                padding-right:0;
+
+                li {
+                    display: inline;
+                }
+            }
+            @media (max-width: $screen-xs-max) {
+                 .connect-links {
+                    li {
+                        display: block;
+                    }
+                }
+            }
+            .carousel {
+                a.carousel-control {
+                    height: 25px;
+                    width: 25px;
+                    top: 80%;
+
+                    &.left {
+                        left: 2%;
+                    }
+                    &.right {
+                        right: 2%;
+                    }
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                .glyphicon-chevron-left:before,
+                .glyphicon-chevron-right:before {
+                    content: none;
+                }
+            }
+            .grey-bg {
+                background: #eee;
+                padding: 10px;
+
+                .city-banners {
+                    li {
+                        display: block;
+                        width: 20%;
+                        padding: 1%;
+                        float:left;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                .direct-links {
+                    li {
+                        padding: 2% 1%;
+
+                        img {
+                          width: 100%;
+                        }
+                    }
+                }
+                @media (max-width: $screen-xs-max) {
+                    .direct-links {
+                        li {
+                          display: block;
+                          width: 33%;
+                          float: left;
+                          padding: 1%;
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            background: #84888b;
+            color: #fff;
+
+            li {
+                display: inline;
+            }
+            a {
+                color: #fff;
+            }
+            .footer-right-img {
+                img {
+                    border: 1px solid #fff;
+                    padding: 5px;
+              }
+            }
+        }
     }
 }
