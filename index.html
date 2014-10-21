@@ -6,14 +6,16 @@
     <title>Rocketweb</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="page container">
-    <header>
-    <!--    <div class="search-dropdown"><select><option>I am looking for...</option></select></div>
-        <div id="logo"></div>
+    <div class="page container-fluid">
+        <header class="row">
+            <div class="col-md-8" id="logo"><img src="images/logo.jpg" alt="..."></div>
+            <div class="col-md-4 search-dropdown"><select><option>I am looking for...</option></select></div>
+        </header>
         <nav class="navbar navbar-default" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
@@ -22,7 +24,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">TutorialsPoint</a>
             </div>
             <div class="collapse navbar-collapse" id="example-navbar-collapse">
                 <ul class="nav navbar-nav">
@@ -32,162 +33,167 @@
                     <li><a href="#">Business</a></li>
                     <li><a href="#">Visitors</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">Weho TV</a></li>
+                </ul>
+                <div id="search-block">
+                    <div class="form-search input-group">
+                        <input id="search" class="form-control" type="text" placeholder="Serch...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit" title="Serch"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="main">
+            <div id="home-top" class="row">
+                <div class="col-xs-12 col-sm-9 col-md-9">
+                    <div id="carousel-banner" class="carousel slide" data-ride="carousel" data-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="images/main-banner.jpg" alt="...">
+                                <div class="carousel-caption">
+                                    <h3>Caption Text</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/main-banner.jpg" alt="...">
+                                <div class="carousel-caption">
+                                    <h3>Caption Text</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/main-banner.jpg" alt="...">
+                                <div class="carousel-caption">
+                                    <h3>Caption Text</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-banner" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-banner" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div> <!-- Carousel -->
+                </div>
+                <div class="most-populare col-xs-12 col-sm-3 col-md-3">
+                    <div class="row">
+                        <h2 class="col-xs-12">Most Popular</h2>
+                        <ul class="popular-links col-xs-6 col-sm-12">
+                            <li><a href="#">Current Meeting Agendas</a></li>
+                            <li><a href="#">City Jobs</a></li>
+                            <li><a href="#">Pay Your Parking Ticket</a></li>
+                            <li><a href="#">Media Room</a></li>
+                            <li><a href="#">Rental Referral List</a></li>
+                            <li><a href="#">Administrative Citations</a></li>
+                            <li><a href="#">Municipal Code</a></li>
+                        </ul>
+                        <ul class="connect-links col-xs-6 col-sm-12">
+                            <li><span>Connect With</span></li>
+                            <li><a href="#"><img src="images/facebook.jpg" alt=""/></a></li>
+                            <li><a href="#"><img src="images/facebook.jpg" alt=""/></a></li>
+                            <li><a href="#"><img src="images/facebook.jpg" alt=""/></a></li>
+                            <li><a href="#"><img src="images/facebook.jpg" alt=""/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row grey-bg">
+                <ul class="city-banners col-xs-12 col-sm-9">
+                    <li><img src="images/city-banner.jpg" alt=""/></li>
+                    <li><img src="images/city-banner.jpg" alt=""/></li>
+                    <li><img src="images/city-banner.jpg" alt=""/></li>
+                    <li><img src="images/city-banner.jpg" alt=""/></li>
+                    <li><img src="images/city-banner.jpg" alt=""/></li>
+                </ul>
+                <ul class="direct-links col-xs-12 col-sm-3">
+                    <li><a href="#"><img src="images/direct.jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/recreation.jpg" alt=""/></a></li>
+                    <li><a href="#"><img src="images/art.jpg" alt=""/></a></li>
                 </ul>
             </div>
-            <div id="search-block"></div>
-        </nav> -->
-    </header>
-    <div id="main">
-        <div id="home-top" class="row">
-            <div class="col-xs-12 col-sm-9 col-md-9">
-                <div id="carousel-banner" class="carousel slide" data-ride="carousel" data-interval="3000">
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="images/main-banner.jpg" alt="...">
-                            <div class="carousel-caption">
-                                <h3>Caption Text</h3>
-                            </div>
+            <div class="row">
+                <div class="left-col col-xs-12 col-sm-12 col-md-9">
+                    <div class="row">
+                        <div class="block-home col-xs-12 col-sm-6">
+                            <h2 class="home-tittle stories">Top Stories</h2>
+                            <article class="post">
+                                <h4>October 20 City Council Meeting Agenda Packet Now Available</h4>
+                                <img src="images/img-post.jpg" alt=""/><p>The online agenda packet includes links to related staff reports and documentation. Hollywood Park is for kids...<a href="#">Read more</a></p>
+                            </article>
+                            <article class="post">
+                                <h4>October 20 City Council Meeting Agenda Packet Now Available</h4>
+                                <img src="images/img-post.jpg" alt=""/><p>The online agenda packet includes links to related staff reports and documentation. Hollywood Park is for kids...<a href="#">Read more</a></p>
+                            </article>
+                            <article class="post">
+                                <h4>October 20 City Council Meeting Agenda Packet Now Available</h4>
+                                <img src="images/img-post.jpg" alt=""/><p>The online agenda packet includes links to related staff reports and documentation. Hollywood Park is for kids...<a href="#">Read more</a></p>
+                            </article>
                         </div>
-                        <div class="item">
-                            <img src="images/main-banner.jpg" alt="...">
-                            <div class="carousel-caption">
-                                <h3>Caption Text</h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="images/main-banner.jpg" alt="...">
-                            <div class="carousel-caption">
-                                <h3>Caption Text</h3>
-                            </div>
+                        <div class="block-home col-xs-12 col-sm-6">
+                            <h2 class="home-tittle stories">Highlights</h2>
+                            <article class="post">
+                                <h4>October 20 City Council Meeting Agenda Packet Now Available</h4>
+                                <img src="images/img-post.jpg" alt=""/><p>The online agenda packet includes links to related staff reports and documentation. Hollywood Park is for kids...<a href="#">Read more</a></p>
+                            </article>
+                            <article class="post">
+                                <h4>October 20 City Council Meeting Agenda Packet Now Available</h4>
+                                <img src="images/img-post.jpg" alt=""/><p>The online agenda packet includes links to related staff reports and documentation. Hollywood Park is for kids...<a href="#">Read more</a></p>
+                            </article>
+                            <article class="post">
+                                <h4>October 20 City Council Meeting Agenda Packet Now Available</h4>
+                                <img src="images/img-post.jpg" alt=""/><p>The online agenda packet includes links to related staff reports and documentation. Hollywood Park is for kids...<a href="#">Read more</a></p>
+                            </article>
                         </div>
                     </div>
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-banner" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-banner" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                </div> <!-- Carousel -->
+                </div>
+                <div class="right-col col-xs-12 col-sm-12 col-md-3">
+                    <div class="calendar row">
+                        <h2 class="title col-xs-12">City Calendar</h2>
+                        <div class="col-xs-12 col-sm-6 col-md-12">
+                            <p><strong>Saturday, Oct 18</strong></p>
+                            <ul>
+                                <li><a href="#">Low-Cost Pet Vaccination & Microchip Clinic</a></li>
+                                <li><a href="#">Low-Cost Pet Vaccination & Microchip Clinic</a></li>
+                                <li><a href="#">Low-Cost Pet Vaccination & Microchip Clinic</a></li>
+                                <li><a href="#">Low-Cost Pet Vaccination & Microchip Clinic</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-12">
+                            <p><strong>Sanday, Oct 19</strong></p>
+                            <ul>
+                                <li><a href="#">Low-Cost Pet Vaccination & Microchip Clinic</a></li>
+                                <li><a href="#">Low-Cost Pet Vaccination & Microchip Clinic</a></li>
+                                <li><a href="#">Low-Cost Pet Vaccination & Microchip Clinic</a></li>
+                                <li><a href="#">Low-Cost Pet Vaccination & Microchip Clinic</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="most-populare col-xs-12 col-sm-3 col-md-3">
-                <div class="row">
-                    <h2 class="col-xs-12">Most Popular</h2>
-                    <ul class="popular-links col-xs-6 col-sm-12">
-                        <li><a href="#">Current Meeting Agendas</a></li>
-                        <li><a href="#">City Jobs</a></li>
-                        <li><a href="#">Pay Your Parking Ticket</a></li>
-                        <li><a href="#">Media Room</a></li>
-                        <li><a href="#">Rental Referral List</a></li>
-                        <li><a href="#">Administrative Citations</a></li>
-                        <li><a href="#">Municipal Code</a></li>
+        </div>
+        <footer class="row">
+                <div class="col-xs-12 col-sm-9 col-md-10">
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">City Hall</a></li>
+                        <li><a href="#">Residents</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Visitors</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Weho TV</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Employment</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
                     </ul>
-                    <ul class="connect-links col-xs-6 col-sm-12">
-                        <li><span>Connect With</span></li>
-                        <li><a href="#"><img src="images/facebook.jpg" alt=""/></a></li>
-                        <li><a href="#"><img src="images/facebook.jpg" alt=""/></a></li>
-                        <li><a href="#"><img src="images/facebook.jpg" alt=""/></a></li>
-                        <li><a href="#"><img src="images/facebook.jpg" alt=""/></a></li>
-                    </ul>
+                    <div class="address">City of West Hollywood, 8300 Santa Monica Boulevard, West Hollywood, CA 90069 | Tel:(323)848-6400</div>
+                    <div class="copirite">2014 City of West Hollywood. All Rights Reserved. Website Created by Vision Internet</div>
+                    <div class="footer-logo"><img src="images/footer-logo.gif" alt=""/></div>
                 </div>
-            </div>
-        </div>
-        <div class="row grey-bg">
-            <ul class="city-banners col-xs-12 col-sm-9">
-                <li><img src="images/city-banner.jpg" alt=""/></li>
-                <li><img src="images/city-banner.jpg" alt=""/></li>
-                <li><img src="images/city-banner.jpg" alt=""/></li>
-                <li><img src="images/city-banner.jpg" alt=""/></li>
-                <li><img src="images/city-banner.jpg" alt=""/></li>
-            </ul>
-            <ul class="direct-links col-xs-12 col-sm-3">
-                <li><a href="#"><img src="images/direct.jpg" alt=""/></a></li>
-                <li><a href="#"><img src="images/recreation.jpg" alt=""/></a></li>
-                <li><a href="#"><img src="images/art.jpg" alt=""/></a></li>
-            </ul>
-        </div>
-        <div class="row">
-            <div class="left-col col-xs-12 col-sm-12 col-md-9">
-                <div class="row">
-                    <div class="block-home col-xs-12 col-sm-6">
-                        <h2 class="home-tittle stories">Top Stories</h2>
-                        <article class="post">
-                            <h4>October 20 City Council Meeting Agenda Packet Now Available</h4>
-                            <img src="images/img-post.jpg" alt=""/><p>The online agenda packet includes links to related staff reports and documentation.<a href="#">Read more</a></p>
-                        </article>
-                        <article class="post">
-                            <h4>October 20 City Council Meeting Agenda Packet Now Available</h4>
-                            <img src="images/img-post.jpg" alt=""/><p>The online agenda packet includes links to related staff reports and documentation.<a href="#">Read more</a></p>
-                        </article>
-                        <article class="post">
-                            <h4>October 20 City Council Meeting Agenda Packet Now Available</h4>
-                            <img src="images/img-post.jpg" alt=""/><p>The online agenda packet includes links to related staff reports and documentation.<a href="#">Read more</a></p>
-                        </article>
-                    </div>
-                    <div class="block-home col-xs-12 col-sm-6">
-                        <h2 class="home-tittle stories">Highlights</h2>
-                        <article class="post">
-                            <h4>October 20 City Council Meeting Agenda Packet Now Available</h4>
-                            <img src="images/img-post.jpg" alt=""/><p>The online agenda packet includes links to related staff reports and documentation.<a href="#">Read more</a></p>
-                        </article>
-                        <article class="post">
-                            <h4>October 20 City Council Meeting Agenda Packet Now Available</h4>
-                            <img src="images/img-post.jpg" alt=""/><p>The online agenda packet includes links to related staff reports and documentation.<a href="#">Read more</a></p>
-                        </article>
-                        <article class="post">
-                            <h4>October 20 City Council Meeting Agenda Packet Now Available</h4>
-                            <img src="images/img-post.jpg" alt=""/><p>The online agenda packet includes links to related staff reports and documentation.<a href="#">Read more</a></p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-            <div class="right-col col-xs-12 col-sm-12 col-md-3">
-                <div class="calendar row">
-                    <h2 class="title col-xs-12">City Calendar</h2>
-                    <div class="col-xs-12 col-sm-6 col-md-12">
-                        <p><strong>Saturday, Oct 18</strong></p>
-                        <ul>
-                            <li><a href="#">Low-Cost Pet Vaccination & Microchip Clinic</a></li>
-                            <li><a href="#">Low-Cost Pet Vaccination & Microchip Clinic</a></li>
-                            <li><a href="#">Low-Cost Pet Vaccination & Microchip Clinic</a></li>
-                            <li><a href="#">Low-Cost Pet Vaccination & Microchip Clinic</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-12">
-                        <p><strong>Sanday, Oct 19</strong></p>
-                        <ul>
-                            <li><a href="#">Low-Cost Pet Vaccination & Microchip Clinic</a></li>
-                            <li><a href="#">Low-Cost Pet Vaccination & Microchip Clinic</a></li>
-                            <li><a href="#">Low-Cost Pet Vaccination & Microchip Clinic</a></li>
-                            <li><a href="#">Low-Cost Pet Vaccination & Microchip Clinic</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+                <div class="footer-right-img hidden-xs col-sm-3 col-md-2"><img src="images/footer-img.gif" alt=""/></div>
+        </footer>
     </div>
-    <footer class="row">
-            <div class="col-xs-12 col-sm-9 col-md-10">
-                <ul class="footer-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">City Hall</a></li>
-                    <li><a href="#">Residents</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Visitors</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Weho TV</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Site Map</a></li>
-                    <li><a href="#">Employment</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-                <div class="address">City of West Hollywood, 8300 Santa Monica Boulevard, West Hollywood, CA 90069 | Tel:(323)848-6400</div>
-                <div class="copirite">2014 City of West Hollywood. All Rights Reserved. Website Created by Vision Internet</div>
-                <div class="footer-logo"><img src="images/footer-logo.gif" alt=""/></div>
-            </div>
-            <div class="footer-right-img hidden-xs col-sm-3 col-md-2"><img src="images/footer-img.gif" alt=""/></div>
-    </footer>
-</div>
 </body>
 </html>

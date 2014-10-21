@@ -1,64 +1,93 @@
 body {
   font-family: Arial;
-  font-size: 12px;
+  font-size: 14px;
   color: #333333; }
   body h2 {
-    color: #73adb3;
+    color: #59c5c7;
     text-transform: uppercase;
-    border-bottom: 1px dashed #eee; }
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 5px; }
   body a {
-    color: #ed0c7e; }
-  body .container {
+    color: #ed0c7e !important; }
+  body #search-block {
+    width: 22%;
+    float: left; }
+  body .navbar-nav {
+    width: 78%;
+    float: left; }
+    body .navbar-nav li a {
+      text-transform: uppercase;
+      color: #59c5c7 !important; }
+      body .navbar-nav li a:hover {
+        color: #ed0c7e !important; }
+  body .container-fluid {
     max-width: 1170px; }
-    body .container #main .connect-links {
+    body .container-fluid #main .connect-links {
       padding-right: 0; }
-      body .container #main .connect-links li {
+      body .container-fluid #main .connect-links li {
         display: inline; }
     @media (max-width: 767px) {
-      body .container #main .connect-links li {
+      body .container-fluid #main .connect-links li {
         display: block; } }
-    body .container #main .carousel a.carousel-control {
+    body .container-fluid #main .carousel a.carousel-control {
       height: 25px;
       width: 25px;
       top: 80%; }
-      body .container #main .carousel a.carousel-control.left {
+      body .container-fluid #main .carousel a.carousel-control.left {
         left: 2%; }
-      body .container #main .carousel a.carousel-control.right {
+      body .container-fluid #main .carousel a.carousel-control.right {
         right: 2%; }
-    body .container #main .carousel img {
+    body .container-fluid #main .carousel img {
       width: 100%;
       height: auto; }
-    body .container #main .carousel .glyphicon-chevron-left:before,
-    body .container #main .carousel .glyphicon-chevron-right:before {
+    body .container-fluid #main .carousel .glyphicon-chevron-left:before,
+    body .container-fluid #main .carousel .glyphicon-chevron-right:before {
       content: none; }
-    body .container #main .grey-bg {
+    body .container-fluid #main .grey-bg {
       background: #eee;
-      padding: 10px; }
-      body .container #main .grey-bg .city-banners li {
+      padding-top: 10px; }
+      body .container-fluid #main .grey-bg .city-banners li {
         display: block;
         width: 20%;
         padding: 1%;
         float: left; }
-        body .container #main .grey-bg .city-banners li img {
+        body .container-fluid #main .grey-bg .city-banners li img {
           width: 100%; }
-      body .container #main .grey-bg .direct-links li {
-        padding: 2% 1%; }
-        body .container #main .grey-bg .direct-links li img {
+      body .container-fluid #main .grey-bg .direct-links li {
+        padding: 2% 1%;
+        list-style: none; }
+        body .container-fluid #main .grey-bg .direct-links li img {
           width: 100%; }
       @media (max-width: 767px) {
-        body .container #main .grey-bg .direct-links li {
+        body .container-fluid #main .grey-bg .direct-links li {
           display: block;
           width: 33%;
           float: left;
           padding: 1%; } }
-    body .container footer {
+    body .container-fluid #main article {
+      border-bottom: 1px dashed #eee;
+      padding: 5px 0;
+      display: block;
+      float: left; }
+      body .container-fluid #main article h4 {
+        clear: both; }
+      body .container-fluid #main article img {
+        float: left;
+        padding: 10px; }
+      body .container-fluid #main article p {
+        padding: 10px; }
+    body .container-fluid footer {
       background: #84888b;
-      color: #fff; }
-      body .container footer li {
-        display: inline; }
-      body .container footer a {
-        color: #fff; }
-      body .container footer .footer-right-img img {
+      color: #fff;
+      padding-top: 10px; }
+      body .container-fluid footer ul {
+        padding-left: 0; }
+        body .container-fluid footer ul li {
+          display: inline;
+          border-right: 1px dashed #fff; }
+        body .container-fluid footer ul a {
+          color: #fff !important; }
+      body .container-fluid footer .footer-right-img img {
         border: 1px solid #fff;
         padding: 5px; }
 

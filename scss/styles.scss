@@ -1,23 +1,52 @@
 @import "bootstrap/_variables";
 @import "bootstrap/_mixins";
 
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: font-url('fonts/glyphicons-halflings-regular.eot');
+  src: font-url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  font-url('fonts/glyphicons-halflings-regular.woff') format('woff'),
+  font-url('fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+  font-url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
 body {
     font-family: Arial;
-    font-size: 12px;
+    font-size: 14px;
     color: #333333;
 
     h2 {
-        color: #73adb3;
+        color: #59c5c7;
         text-transform: uppercase;
         border-bottom: 1px dashed #eee;
+        padding-bottom: 5px;
     }
 
     a {
-        color: #ed0c7e;
+        color: #ed0c7e !important;
     }
+    #search-block {
+        width: 22%;
+        float: left;
+    }
+    .navbar-nav {
+        width: 78%;
+        float: left;
 
-    .container {
+        li {
+            a {
+                text-transform: uppercase;
+                color: #59c5c7 !important;
+
+            &:hover {
+              color: #ed0c7e !important;
+            }
+            }
+        }
+    }
+    .container-fluid {
         max-width: 1170px;
+
         #main {
             .connect-links {
                 padding-right:0;
@@ -57,7 +86,7 @@ body {
             }
             .grey-bg {
                 background: #eee;
-                padding: 10px;
+                padding-top: 10px;
 
                 .city-banners {
                     li {
@@ -74,6 +103,7 @@ body {
                 .direct-links {
                     li {
                         padding: 2% 1%;
+                        list-style: none;
 
                         img {
                           width: 100%;
@@ -91,16 +121,41 @@ body {
                     }
                 }
             }
+            article {
+                border-bottom: 1px dashed #eee;
+                padding: 5px 0;
+                display: block;
+                float: left;
+
+                h4 {
+                    clear: both;
+                }
+                img {
+                    float: left;
+                    padding: 10px;
+                }
+                p {
+                    padding: 10px;
+
+                }
+            }
         }
         footer {
             background: #84888b;
             color: #fff;
+            padding-top: 10px;
 
-            li {
-                display: inline;
-            }
-            a {
-                color: #fff;
+            ul {
+                padding-left:0;
+
+                li {
+                    display: inline;
+                    border-right: 1px solid #fff;
+                    p
+                }
+                a {
+                    color: #fff !important;
+                }
             }
             .footer-right-img {
                 img {
