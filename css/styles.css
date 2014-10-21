@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: font-url("fonts/glyphicons-halflings-regular.eot");
+  src: font-url("fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), font-url("fonts/glyphicons-halflings-regular.woff") format("woff"), font-url("fonts/glyphicons-halflings-regular.ttf") format("truetype"), font-url("fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 body {
   font-family: Arial;
   font-size: 14px;
@@ -84,7 +88,8 @@ body {
         padding-left: 0; }
         body .container-fluid footer ul li {
           display: inline;
-          border-right: 1px dashed #fff; }
+          border-right: 1px solid #fff;
+          padding-right: 10px; }
         body .container-fluid footer ul a {
           color: #fff !important; }
       body .container-fluid footer .footer-right-img img {
